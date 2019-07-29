@@ -20,7 +20,7 @@ img{
     z-index: 1;
     font-weight: bolder;
 }
- /* nav>ul{
+ nav>ul{
     text-align:right;
     
   }
@@ -40,7 +40,7 @@ nav>ul>li>a:hover {
     color: rgb(229, 233, 232);
     text-decoration:none; 
 }
-#overlay{
+/* #overlay{
     position: fixed; 
     height: 8%;
     width: 85.5%; 
