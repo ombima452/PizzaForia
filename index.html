@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PizzaForia</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Sansita&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="home">
+            <div class="navbar">
+                <div id="overlay">
+                    <nav>
+                        <ul>
+                            <li><a href="#home">HOME</a></li>
+                            <li><a href="#about">ABOUT US</a></li>
+                            <li><a href="#menu">MENU</a></li>
+                            <li><a href="#order">ORDER HERE</a></li>
+                            <li><a href="#contact">CONTACT US</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- <div class="jumbotron">
+                <br>
+                <img src="images/icon.jpeg" alt="">
+                <h1>Pizza Foria</h1>
+                <p>Where taste meets the myth</p>
+            </div>
+        </div>
+        <div id="about">
+            <br><br>
+            <h2>ABOUT US</h2>
+            <br><br>
+            <p>PizzaForia is the best place you can ever your cravings for pizza.
+                We serve hot oven-fresh pizza with its signature all-natural tomato
+                sauce and using only <br> <br>freshest ingredients, PizzaForia has established
+                itself at the top of the industry and is easily one of the first choices in
+                quick service pizza in Africa.</p>
+            <em>
+                <p>If its not PizzaForia, Its definitely not pizza!!!</p>
+            </em>
+            <br><br><br>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/img6.jpeg" width="350" height="250" title="">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/img4.jpg" width="350" height="250" title="Freshly made delicious pizza">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/img5.jpg" width="350" height="250" title="Best tasting pizza">
+                </div>
+            </div>
+        </div>
+        <div id="menu">
+            <br><br><br>
+            <h2>MENU</h2>
+            <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/bbq-chicken.jpg" width="350" height="250" title="BBQ Chicken pizza" id="button">
+                    <h4>BBQ Chicken pizza</h4>
+
+                    <br><br>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/chicken-and mushroom.jpg" width="350" height="250"
+                        title="Chicken and Mushroom pizza">
+                    <h4>Chicken and Mushroom pizza</h4>
+
+                    <br><br>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/peri-peri-chicken.jpg" width="350" height="250" title="Peri Peri Chicken pizza">
+                    <h4>Peri Peri chicken</h4>
+
+                    <br><br>
+                </div>
+
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/hawaiian-pizza.jpg" width="350" height="250" title="Hawaiian pizza">
+                    <h4>Hawaiian pizza</h4>
+
+                    <br><br>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/boerewors.jpg" width="350" height="250" title="Boerewors pizza">
+                    <h4>Boerewors pizza</h4>
+
+                    <br><br>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/veg-tikka.jpg" width="350" height="250" title="Veg Tikka pizza">
+                    <h4>Veg-Tikka pizza</h4>
+
+                    <br><br>
+                </div>
+            </div>
+        </div>
+
+        <div id="order">
+            <br><br><br>
+            <h2>PLACE YOUR ORDER</h2><br><br>
+            <div class="forms">
+                
+                    <form class="form" action="index.html" id="myOrder" name="myform" onsubmit="return validateForm">
+                        <select class="form-control" id="type" name="type">
+                            <option value="0">Select Type of pizza</option>
+                            <option value="Veg-Tikka">Veg tikka</option>
+                            <option value="Hawaiian">Hawaiian</option>
+                            <option value="peri-peri-chicken">peri-peri-chicken</option>
+                            <option value="boerewors">boerewors</option>
+                            <option value="chicken and mushroom">chicken and mushroom</option>
+                        </select><br><br>
+
+                        <select class="form-control" id="size">
+                            <option value="0">Select Size</option>
+                            <option value="1">large</option>
+                            <option value="2">medium</option>
+                            <option value="3">small</option>
+                        </select><br><br>
+
+                        <select class="form-control" id="crust">
+                            <option selected>Select Crust</option>
+                            <option value="Stuffed">Stuffed</option>
+                            <option value="Crispy">Crispy</option>
+                            <option value="glutten-free">glutten-free</option>
+                        </select><br><br>
+
+                        <select class="custom-select" id="toppings">
+                            <option selected>Select Toppings</option>
+                            <option value="Mushroom">Mushroom</option>
+                            <option value="Onion">Onion</option>
+                            <option value="Ham">Ham</option>
+                            <option value="Olives">Olives</option>
+                            <option value="Tomatoes">Tomatoes</option>
+                            <option value="Pineapples">Pineapples</option>
+                        </select><br><br><br>
+                        <input type="number" class="form-control" name="quantity" id="quantity"
+                            placeholder="Select quantinty" min="1"><br>
+                        <select class="custom-select" id="delivery-option">
+                            <option selected>Do you want your order delivered?</option>
+                            <option value="1">Deliver</option>
+                            <option value="2">Collect</option>
+                        </select>
+                        <br><br>
+                        <button type="submit" class="btn btn-outline-danger btn-lg">SEND</button>
+                    </form>
+            </div>
+        </div>
+        <br><br><br>
+        <div id="contact">
+
+            <div id="overlay2">
+                <h2>CONTACT US</h2>
+                <form>
+                    <div class="form-group">
+                        <label>Name:</label>
+                        <input type="text" class="form-control" placeholder="Your Name">
+                        <label>Comment:</label>
+                        <textarea class="form-control" rows="8" id="comment"
+                            placeholder="Leave your comment here"></textarea><br>
+                        <button type="button" class="btn btn-outline-light btn-block">SEND</button>
+                    </div>
+                </form>
+                <div class="contact">
+                    <h3>Talk to us:</h3>
+                    <p><img src="images/telicon.png" height="50" width="50"> <span>Tel:</span> 0742546673</p><br>
+                    <p><img src="images/emailicon.jpeg" height="30" width="50"><span>Email:</span>
+                        christineombima452@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html> -->
