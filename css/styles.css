@@ -40,7 +40,7 @@ nav>ul>li>a:hover {
     color: rgb(229, 233, 232);
     text-decoration:none; 
 }
-/* #overlay{
+#overlay{
     position: fixed; 
     height: 8%;
     width: 85.5%; 
@@ -52,7 +52,7 @@ nav>ul>li>a:hover {
     background-color: rgba(8, 8, 8, 0.8); 
     z-index: 2; 
 }
-#about{
+/* #about{
     background-color: rgba(230, 198, 182, 0.678); 
     text-align: center;
     padding-top: 20px;
